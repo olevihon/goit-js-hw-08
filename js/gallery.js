@@ -1,5 +1,3 @@
-import basiclightbox from 'https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/+esm';
-
 const images = [
   {
     preview:
@@ -95,7 +93,7 @@ function onGalleryImageClick(e) {
   if (e.target === e.currentTarget) return;
 
   if (e.target.dataset.source) {
-    const instance = basiclightbox.create(
+    const instance = basicLightbox.create(
       `<img
         class="modal-image"
         src="${e.target.dataset.source}"
